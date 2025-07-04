@@ -1,4 +1,4 @@
-import { SquareTerminal, Bot, BookOpen, Settings2, LifeBuoy, Send, Frame, PieChart, Map, Coffee, Utensils, Hotel, ShoppingCart, Users, Building2, LayoutGrid } from "lucide-react"
+import { SquareTerminal, Bot, BookOpen, Settings2, LifeBuoy, Send, Frame, PieChart, Map, Coffee, Utensils, Hotel, ShoppingCart, Users, Building2, LayoutGrid, BarChart3 } from "lucide-react"
 import { useMemo } from 'react'
 
 export const sidebarData = {
@@ -15,61 +15,67 @@ export const sidebarData = {
       exactPathMatch: true,
     },
     {
-      title: "Users",
-      url: "/dashboard/users",
-      icon: Users,
+      title: "Analytics",
+      url: "/dashboard/analytics",
+      icon: BarChart3,
       exactPathMatch: true,
     },
-    {
-      title: "Tenants",
-      url: "/dashboard/tenants",
-      icon: Building2,
-      exactPathMatch: true,
-    },
-    {
-      title: "Organizations",
-      url: "/dashboard/organizations",
-      icon: Users,
-      exactPathMatch: true,
-    },
-    {
-      title: "Products",
-      url: "/dashboard/products",
-      icon: ShoppingCart,
-      exactPathMatch: true,
-    },
-    {
-      title: "Services",
-      url: "/dashboard/services",
-      icon: Bot,
-      exactPathMatch: true,
-    },
-    {
-      title: "CRM Builder",
-      url: "/dashboard/crm",
-      icon: LayoutGrid,
-      exactPathMatch: true,
-    },
-    {
-      title: "Settings",
-      url: "/dashboard/settings",
-      icon: Settings2,
-      exactPathMatch: false,
-      items: [
-        {
-          title: "General",
-          url: "/dashboard/settings/general",
-        },
-        {
-          title: "Team",
-          url: "/dashboard/settings/team",
-        },
-        {
-          title: "Billing",
-          url: "/dashboard/settings/billing",
-        },
-      ],
-    },
+    // {
+    //   title: "Users",
+    //   url: "/dashboard/users",
+    //   icon: Users,
+    //   exactPathMatch: true,
+    // },
+    // {
+    //   title: "Tenants",
+    //   url: "/dashboard/tenants",
+    //   icon: Building2,
+    //   exactPathMatch: true,
+    // },
+    // {
+    //   title: "Organizations",
+    //   url: "/dashboard/organizations",
+    //   icon: Users,
+    //   exactPathMatch: true,
+    // },
+    // {
+    //   title: "Products",
+    //   url: "/dashboard/products",
+    //   icon: ShoppingCart,
+    //   exactPathMatch: true,
+    // },
+    // {
+    //   title: "Services",
+    //   url: "/dashboard/services",
+    //   icon: Bot,
+    //   exactPathMatch: true,
+    // },
+    // {
+    //   title: "CRM Builder",
+    //   url: "/dashboard/crm",
+    //   icon: LayoutGrid,
+    //   exactPathMatch: true,
+    // },
+    // {
+    //   title: "Settings",
+    //   url: "/dashboard/settings",
+    //   icon: Settings2,
+    //   exactPathMatch: false,
+    //   items: [
+    //     {
+    //       title: "General",
+    //       url: "/dashboard/settings/general",
+    //     },
+    //     {
+    //       title: "Team",
+    //       url: "/dashboard/settings/team",
+    //     },
+    //     {
+    //       title: "Billing",
+    //       url: "/dashboard/settings/billing",
+    //     },
+    //   ],
+    // },
   ],
   navSecondary: [
     {

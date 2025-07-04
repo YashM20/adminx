@@ -18,7 +18,7 @@ import { AppSidebarContent } from "@/components/layout/sidebar/app-sidebar-conte
 function AppSidebarComponent({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar
-      className="top-[var(--header-height)] !h-[calc(100svh-var(--header-height))]"
+      className="top-[var(--header-height)] !h-[calc(100svh-var(--header-height))] bg-background"
       collapsible="icon"
       {...props}
     >
